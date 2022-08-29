@@ -4,9 +4,9 @@ import { IoRestaurantOutline } from "react-icons/io5";
 const Footer = () => {
   return (
     <div>
-      <div className='grid grid-cols-3 px-3 text-xl py-5 mt-10 bg-black/70 text-white gap-2'>
-        <div className='border-r border-gray-200 pl-x'>
-          <h4 className='text-center text-3xl py-5 flex  items-center gap-2'>
+      <div className='grid md:grid-cols-3 px-3 text-xl py-5 mt-10 bg-black/70 text-white gap-2'>
+        <div className='border-r border-gray-200 w-full'>
+          <h4 className='justify-center text-3xl py-5 flex  items-center gap-2'>
             <IoRestaurantOutline size={30} />
             Delicias
           </h4>

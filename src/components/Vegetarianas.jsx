@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { Link } from "react-router-dom";
 
 const Vegetarianas = () => {
   const [vegetarianas, setVegetarianas] = useState(null);
@@ -52,16 +53,18 @@ const Vegetarianas = () => {
           ? vegetarianas.map((receta) => {
               return (
                 <SplideSlide key={receta.id} className=''>
-                  <div className='relative'>
-                    <h3 className='top-[80%] w-full text-center absolute text-xl bg-gradient-to-r from-black/60 text-white'>
-                      {receta.title}
-                    </h3>
-                    <img
-                      className='rounded-lg w-full shadow-md shadow-slate-200'
-                      src={receta.image}
-                      alt=''
-                    />
-                  </div>
+                  <Link to={`receta/${receta.id}`}>
+                    <div className='relative'>
+                      <h3 className='top-[80%] w-full text-center absolute text-xl bg-gradient-to-r from-black/60 text-white'>
+                        {receta.title}
+                      </h3>
+                      <img
+                        className='rounded-lg w-full shadow-md shadow-slate-200'
+                        src={receta.image}
+                        alt=''
+                      />
+                    </div>
+                  </Link>
                 </SplideSlide>
               );
             })

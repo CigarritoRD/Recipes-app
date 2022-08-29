@@ -8,8 +8,8 @@ const Hero = () => {
     <div className='h-[400px] w-full relative'>
       <div className='h-[400px] w-full absolute z-[80] bg-gradient-to-b from-black/60'></div>
       <img
-        className='w-full h-[400px] absolute top-0 object-cover object-center z-[70] gradient-mask-b-80'
-        src={image}
+        className=' h-[400px] absolute top-0 object-cover object-center z-[70] gradient-mask-b-80 w-full'
+        src={`https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg`}
         alt=''
       />
       <SearchBar />
