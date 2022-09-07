@@ -1,4 +1,5 @@
 import React from "react";
+import ChickenRecipes from "../components/ChickenRecipes";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Populars from "../components/Populars";
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <Populars />
       <Vegetarianas />
+      <ChickenRecipes />
     </div>
   );
 };

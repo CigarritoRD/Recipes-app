@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../Screenshot_2.jpg";
+// import image from "../Screenshot_2.jpg";
 import Categorias from "./Categorias";
 import SearchBar from "./SearchBar";
 

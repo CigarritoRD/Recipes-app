@@ -9,7 +9,6 @@ const SearchBar = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate(`/searched/${search}`);
-    console.log(search);
   };
   return (
     <div className='z-[110] absolute w-full flex justify-center top-32 overflow-hidden'>

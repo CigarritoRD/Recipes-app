@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { useFetch } from "../Hooks/usePopulars";
 import { URLS } from "../Urls/ApiUrls";
 
-const Populars = () => {
-  const { recipes } = useFetch("populars", URLS.populares);
+const ChickenRecipes = () => {
+  const { recipes } = useFetch("ChickenRecipes", URLS.chicken);
 
   return (
     <div className='mt-5'>
-      <h2 className='text-2xl font-bold p-2 text-slate-600'>Las mas populares</h2>
+      <h2 className='text-2xl font-bold p-2 text-slate-600'>Recetas de pollo</h2>
       <Splide
         options={{
           arrows: true,
@@ -52,4 +52,4 @@ const Populars = () => {
   );
 };
 
-export default Populars;
+export default ChickenRecipes;
